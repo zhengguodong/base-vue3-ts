@@ -10,9 +10,9 @@
       >
         <use xlink:href="#icon-language" />
       </svg> -->
-      选择语言
-      <!-- <el-icon><Edit /></el-icon> -->
-
+    <div style="line-height: 70px;font-size:25px">
+      <img src="../../assets/icons/language.svg" alt="" width="20" height="20" >
+    </div>
       <template #dropdown>
         <el-dropdown-menu>
           <el-dropdown-item
@@ -30,6 +30,7 @@
 
 <script lang="ts">
 import {Edit} from "@element-plus/icons-vue"
+// import language from "../../assets/icons/language.svg"
 import { useStore } from '@/store'
 import { computed, defineComponent, reactive, toRefs } from 'vue'
 import { AppActionTypes } from '@/store/modules/app/action-types'

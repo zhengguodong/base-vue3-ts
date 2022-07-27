@@ -5,7 +5,15 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    children:[
+      {
+        path: 'showdata',
+        name: 'showdata',
+        component: ()=>import("../views/showData/index.vue"),
+
+      }
+    ]
   },
   // {
   //   path: '/about',
