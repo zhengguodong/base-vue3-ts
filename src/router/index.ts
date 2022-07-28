@@ -6,11 +6,18 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'Home',
     component: Home,
+    redirect:'/showdata',
     children:[
       {
         path: 'showdata',
         name: 'showdata',
         component: ()=>import("../views/showData/index.vue"),
+
+      },
+      {
+        path: 'test',
+        name: 'test',
+        component: ()=>import("../views/Test/index.vue"),
 
       }
     ]

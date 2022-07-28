@@ -21,10 +21,10 @@ import Nav from "../components/Nav/index.vue"
   .main_box{
     width: 100%;
     height: calc(100vh - 70px);
-    background-color: #409EFF;
+    background-color: #e0e5e9;
     .box{
       height: calc(100% - 40px);
-      background-color: aqua;
+      background-color: #fff;
       margin: 20px;
       border-radius: 5px;
     }
